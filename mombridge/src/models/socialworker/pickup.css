@@ -1,0 +1,108 @@
+/* Container */
+.pickup-container {
+  padding: 10px;
+}
+
+/* Title */
+.pickup-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* 🔥 GRID = 4 CARDS PER ROW */
+.pickup-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.pickup-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.pickup-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transform: translateY(-3px);
+}
+
+/* Header */
+.pickup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pickup-header h3 {
+  font-size: 16px;
+  color: #111827;
+}
+
+/* Status */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.collected {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+/* Items */
+.items ul {
+  margin-top: 5px;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Button */
+.collect-btn {
+  margin-top: auto;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.collect-btn:hover {
+  background: #4338ca;
+}
+
+/* 🔥 RESPONSIVE (VERY IMPORTANT) */
+@media (max-width: 1200px) {
+  .pickup-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .pickup-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pickup-grid {
+    grid-template-columns: 1fr;
+  }
+}

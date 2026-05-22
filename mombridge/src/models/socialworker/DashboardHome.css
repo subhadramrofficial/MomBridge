@@ -1,0 +1,47 @@
+.sw-dashboard-home {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Stats */
+.sw-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.sw-card {
+  flex: 1;
+  min-width: 220px;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.sw-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.sw-card h3 {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.sw-card p {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #111827;
+}
+
+/* Chart */
+.sw-chart-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}

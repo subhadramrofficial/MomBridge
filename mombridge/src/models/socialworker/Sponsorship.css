@@ -1,0 +1,142 @@
+/* Container */
+.spon-container {
+  padding: 10px;
+}
+
+.spon-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.empty-text {
+  color: #6b7280;
+}
+
+/* 🔥 GRID */
+.spon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.spon-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.spon-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transform: translateY(-3px);
+}
+
+/* Header */
+.spon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.spon-header h3 {
+  font-size: 16px;
+  color: #111827;
+}
+
+/* Status */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status.progress {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.status.done {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* Actions */
+.spon-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* Buttons */
+.verify-btn {
+  flex: 1;
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.verify-btn:hover {
+  background: #15803d;
+}
+
+.reject-btn {
+  flex: 1;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background: #dc2626;
+}
+
+.complete-btn {
+  width: 100%;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.complete-btn:hover {
+  background: #4338ca;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .spon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .spon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .spon-grid {
+    grid-template-columns: 1fr;
+  }
+}

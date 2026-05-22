@@ -1,0 +1,98 @@
+/* Container */
+.verify-container {
+  padding: 10px;
+}
+
+.verify-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.empty-text {
+  color: #6b7280;
+}
+
+/* 🔥 GRID */
+.verify-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.verify-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.verify-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transform: translateY(-3px);
+}
+
+/* Header */
+.verify-header h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Buttons */
+.verify-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.verify-btn {
+  flex: 1;
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.verify-btn:hover {
+  background: #15803d;
+}
+
+.reject-btn {
+  flex: 1;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .verify-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .verify-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .verify-grid {
+    grid-template-columns: 1fr;
+  }
+}

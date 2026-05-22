@@ -1,0 +1,43 @@
+.job-layout {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.job-body {
+  display: flex;        
+}
+
+
+.page-container {
+  flex: 1;
+  padding: 40px;
+  background: #f8f9fa;
+}
+
+.job-form {
+  max-width: 700px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Inputs */
+.job-form input,
+.job-form textarea,
+.job-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.date-group {
+  display: flex;
+  gap: 20px;
+}
+
+.date-group div {
+  flex: 1;
+}

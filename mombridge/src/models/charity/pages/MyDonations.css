@@ -1,0 +1,167 @@
+/* Container */
+.donation-container {
+  padding: 28px;
+}
+
+/* Header */
+.donation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.donation-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.donation-header span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Card */
+.donation-card {
+  margin-top: 10px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #f1f5f9;
+}
+
+/* Table */
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* Header */
+.donation-table th {
+  text-align: left;
+  padding: 14px 12px;
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 13px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Rows */
+.donation-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* Hover */
+.donation-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.donation-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Items */
+.items-cell {
+  max-width: 260px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.item-pill {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin: 3px;
+  font-size: 12px;
+  color: #374151;
+}
+
+/* Mode Badge */
+.mode-badge {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Status Colors */
+.status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.collected {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Actions */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Buttons (more modern) */
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Edit */
+.edit-btn {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.edit-btn:hover {
+  background: #e2e8f0;
+}
+
+/* Delete */
+.delete-btn {
+  background: #fff1f2;
+  color: #b91c1c;
+}
+
+.delete-btn:hover {
+  background: #ffe4e6;
+}
+
+/* Empty */
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+.edit-btn:disabled,
+.delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}

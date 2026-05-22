@@ -1,0 +1,107 @@
+.charity-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #fdfbff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.charity-card {
+  background: white;
+  width: 400px;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.charity-card h2 {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.charity-card input,
+.charity-card textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1.5px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Make textarea look like input */
+.charity-card textarea {
+  resize: none;
+  height: 48px; /* same height as input */
+}
+
+/* Focus effect */
+.charity-card input:focus,
+.charity-card textarea:focus {
+  border-color: #6b4eff;
+  box-shadow: 0 0 0 3px rgba(107, 78, 255, 0.15);
+}
+
+/* Button */
+.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6b4eff, #8a6bff);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(107, 78, 255, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-message {
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Error */
+.form-message.error {
+  background-color: #fdecea;
+  color: #b71c1c;
+  border: 1px solid #f5c6cb;
+}
+
+/* Success */
+.form-message.success {
+  background-color: #e6f4ea;
+  color: #1b5e20;
+  border: 1px solid #b7e1c1;
+}
+
