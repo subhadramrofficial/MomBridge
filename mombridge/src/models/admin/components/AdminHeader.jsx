@@ -1,4 +1,4 @@
-import "./admin.css";
+import "./Admin.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import NotificationsDropdown from "./NotificationsDropdown"; // <-- import the component
